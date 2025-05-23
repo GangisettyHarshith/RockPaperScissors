@@ -8,6 +8,11 @@ let ress = document.getElementById("ress");
 
 let body = document.getElementById("body");
 
+let tie = document.getElementById("tie");
+let won = document.getElementById("won");
+let lost = document.getElementById("lost");
+
+let t =0,w=0,l=0;
 
 let rc = 1, pc = 2, cc = 3;
 
@@ -22,6 +27,7 @@ r.addEventListener("click",() => {
         ma.innerText = "Rock"
         u.innerText = "Rock"
         ress.innerText = "Tie"
+        tie.innerText = (++t)+" "
         body.style.backgroundColor = "White"
 
         
@@ -31,6 +37,7 @@ r.addEventListener("click",() => {
         u.innerText = "Rock"
         ress.innerText = "You Lost"
         body.style.backgroundColor = "red"
+        lost.innerText = (++l)+" "
         
     }
     else if(rnd==3) {
@@ -38,6 +45,8 @@ r.addEventListener("click",() => {
         u.innerText = "Rock"
         ress.innerText = "You Won"
         body.style.backgroundColor = "green"
+        won.innerText = (++w)+" "
+
         
     }
     
@@ -53,12 +62,15 @@ p.addEventListener("click",() => {
         u.innerText = "Paper"
         ress.innerText = "You Won"
         body.style.backgroundColor = "Green"
+        won.innerText = (++w)+" "
+
         
     }
     else if (rnd == 2) {
         ma.innerText = "Paper"
         u.innerText = "Paper"
         ress.innerText = "Tie"
+        tie.innerText = (++t)+" "
         body.style.backgroundColor = "White"
         
     }
@@ -67,6 +79,8 @@ p.addEventListener("click",() => {
         u.innerText = "Paper"
         ress.innerText = "You Lost"
         body.style.backgroundColor = "red"
+        lost.innerText = (++l)+" "
+
         
     }
     
@@ -82,6 +96,8 @@ c.addEventListener("click",() => {
         u.innerText = "Scissor"
         ress.innerText = "You Lost"
         body.style.backgroundColor = "red"
+        lost.innerText = (++l)+" "
+
         
     }
     else if (rnd == 2) {
@@ -89,12 +105,14 @@ c.addEventListener("click",() => {
         u.innerText = "Scissor"
         ress.innerText = "You Won"
         body.style.backgroundColor = "green"
+        won.innerText = (++w)+" "
 
     }
     else if(rnd==3) {
         ma.innerText = "Scissor"
         u.innerText = "Scissor"
         ress.innerText = "Tie"
+        tie.innerText = (++t)+" "
         body.style.backgroundColor = "White"
 
 
