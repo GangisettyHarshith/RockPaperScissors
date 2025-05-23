@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#r,#p,#c
+{
+    border-radius: 400px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+#imgs
+{
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    justify-content: center;
+}
+#test
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/* #ress
+{
+    border: 0px solid black;
+    background-color: rgb(9, 9, 54);
+    width: 100px;
+    height: 70px;
+    margin-left: 680px;
+    color: wheat;
+    font-size: 50px;
+    align-items: center;
+    text-align: center
+    ;
+} 
+*/
